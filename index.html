@@ -17,33 +17,62 @@
     <div class="container">
       <form>
         <div class="row">
-          <div class="col-12 bg-info border border-danger">
+          <div class="col-12 bg-info">
             <h1>Payment Form</h1>
           </div>
         </div>
+        <div class="row form-control">
+          <div
+            class="col-12 border border-danger invalid-feedback"
+            style="height: 50px"
+          ></div>
+        </div>
         <div class="row">
-          <div class="col-12 bg-success" style="height: 60px">
-            Refactor for error display
+          <div class="col-4">
+            <label for="name">Card #</label>
+            <input type="text" class="form-control" id="name" />
+          </div>
+          <div class="col-4">
+            <label for="cvc">CVC #</label>
+            <input type="text" class="form-control" id="cvc" />
+          </div>
+          <div class="col-4">
+            <label for="amount">Amount</label>
+            <input type="text" class="form-control" id="amount" />
           </div>
         </div>
         <div class="row">
-          <div class="col-4">Card</div>
-          <div class="col-4">CVC</div>
-          <div class="col-4">Amount</div>
-        </div>
-        <div class="row">
           <div class="col-6">
-            <input type="text" />
-            <input type="text" />
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" />
+            <label for="city">City</label>
+            <input type="text" class="form-control" id="city" />
+            <div class="row">
+              <div class="col-12 form-check">
+                <h6>We accept</h6>
+                <label for="address">We accept</label>
+                <input type="radio" class="form-check-input" id="visa" />
+              </div>
+            </div>
           </div>
           <div class="col-6">
-            <input type="text" />
-            <div class="col-3">
-              <select name="languages" id="lang"></select>
-              <option value="PHP">PHP</option>
-              <option value="Javascript">Javascript</option>
-              <option value="React">React</option>
-              <option value="PHP">PHP</option>
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" />
+            <div class="row">
+              <div class="col-6">
+                <label for="state">State</label>
+                <input type="text" class="form-control" id="state" />
+              </div>
+              <div class="col-6">
+                <label for="postalcode">Polstal Code</label>
+                <input type="text" class="form-control" id="postalcode" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <label for="message">Message</label>
+                <input type="textarea" class="form-control" id="message" />
+              </div>
             </div>
           </div>
         </div>
