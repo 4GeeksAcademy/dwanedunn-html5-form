@@ -26,15 +26,51 @@
   <body>
     <div class="container">
       <form>
-        <div class="row">
-          <div class="col-12">
+        <section class="row form-name-section">
+          <div class="col-12 form-name">
             <h1>Payment Form</h1>
           </div>
-          <!-- First row for form name -->
-        </div>
+          <!--End Form heading-->
+        </section>
         <!-- End Payment head row -->
+        <section class="row form-inputs-section">
+          <!-- Col-1 -->
+          <div class="col-4">
+            <label for="cc-number" class="form-label">CC #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cc-number"
+              placeholder="xxxxxxxxxxxxxxxx"
+              required
+            />
+          </div>
 
-        <div class="row"></div>
+          <!-- Col-2 -->
+          <div class="col-4">
+            <label for="cvc-number" class="form-label">CVC #</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cvc-number"
+              placeholder="xxx"
+              required
+            />
+          </div>
+
+          <!-- Col-3 -->
+          <div class="col-4">
+            <label for="cvc-amount" class="form-label">Amount</label>
+            <input
+              type="text"
+              class="form-control"
+              id="cvc-amount"
+              placeholder="xxx"
+              required
+            />
+          </div>
+        </section>
+        <!-- End of form-inputs-section -->
       </form>
       <!-- End of Form -->
     </div>
