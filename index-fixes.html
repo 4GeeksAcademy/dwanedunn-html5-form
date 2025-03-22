@@ -61,13 +61,15 @@
           <!-- Col-3 -->
           <div class="col-4">
             <label for="cvc-amount" class="form-label">Amount</label>
-            <input
-              type="text"
-              class="form-control"
-              id="cvc-amount"
-              placeholder="Amount"
-              required
-            />
+            <div class="input-group mt-0 mb-3">
+              <span class="input-group-text">$</span>
+              <input
+                type="text"
+                class="form-control"
+                aria-label="Amount (to the nearest dollar)"
+                placeholder="Amount"
+              />
+            </div>
           </div>
         </section>
         <!-- End of CC form-inputs-section -->
@@ -143,7 +145,7 @@
 
         <section class="row">
           <div class="col-6">
-            <div class="form-check bg-dark-subtle text-white p-2 mt-4">
+            <div class="form-check text-bg-dark p-2 mt-4">
               <!-- Input for Mastercard -->
               <input
                 class="form-check-input"
